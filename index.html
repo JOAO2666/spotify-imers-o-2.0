@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/icons/favicon.png" type="image/png">
+</head>
+<body>
+    <div class="main-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <nav class="sidebar-nav">
+                <div class="logo">
+                    <img src="assets/icons/logo-spotify.png" alt="Spotify">
+                </div>
+                <ul class="nav-links">
+                    <li class="active">
+                        <a href="#"><span class="icon">🏠</span> Início</a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="assets/icons/search.png" alt="Buscar" class="icon"> Buscar</a>
+                    </li>
+                    <li>
+                        <a href="#"><span class="icon">📚</span> Sua Biblioteca</a>
+                    </li>
+                </ul>
+                <div class="playlists">
+                    <div class="playlist-header">
+                        <button class="create-playlist">
+                            <span class="icon">➕</span> Criar playlist
+                        </button>
+                        <button class="liked-songs">
+                            <span class="icon">💜</span> Músicas Curtidas
+                        </button>
+                    </div>
+                </div>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="top-bar">
+                <div class="navigation-buttons">
+                    <button class="nav-btn"><img src="assets/icons/small-left.png" alt="Voltar"></button>
+                    <button class="nav-btn"><img src="assets/icons/small-right.png" alt="Avançar"></button>
+                </div>
+                <div class="user-menu">
+                    <button class="profile-btn">
+                        <img src="assets/playlist/1.jpeg" alt="Profile">
+                        <span>Usuário</span>
+                    </button>
+                </div>
+            </header>
+
+            <section class="content">
+                <h1>Boa noite</h1>
+                <div class="recently-played">
+                    <!-- Playlist cards will be added dynamically by JavaScript -->
+                </div>
+
+                <h2>Feito para você</h2>
+                <div class="recommendations">
+                    <!-- Recommendation cards will be added dynamically -->
+                </div>
+            </section>
+        </main>
+
+        <!-- Player -->
+        <footer class="player">
+            <div class="now-playing">
+                <img src="assets/playlist/2.png" alt="Current song">
+                <div class="song-info">
+                    <h4>Nome da música</h4>
+                    <p>Artista</p>
+                </div>
+                <button class="like-btn">🤍</button>
+            </div>
+            <div class="player-controls">
+                <div class="control-buttons">
+                    <button>🔀</button>
+                    <button>⏮</button>
+                    <button class="play-btn">▶</button>
+                    <button>⏭</button>
+                    <button>🔁</button>
+                </div>
+                <div class="progress-bar">
+                    <span class="current-time">0:00</span>
+                    <div class="progress">
+                        <div class="progress-filled"></div>
+                    </div>
+                    <span class="total-time">0:00</span>
+                </div>
+            </div>
+            <div class="volume-controls">
+                <button>📢</button>
+                <div class="volume-bar">
+                    <div class="volume-filled"></div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
