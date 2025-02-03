@@ -59,7 +59,7 @@ git clone https://github.com/JOAO2666/spotify-imers-o-2.0.git
 
 ## 👥 Autor
 
-- João Eduardo
+- João Emanuel Almeida Ramos
 
 ## 📝 Licença
 
